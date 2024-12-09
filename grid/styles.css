@@ -1,0 +1,28 @@
+
+div.container>div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+div.container>.header{
+  background-color: #4834d4;
+  
+}
+
+div.container>.menu{
+  background-color: #eb4d4b;
+  
+}
+
+div.container>.content{
+  background-color: #be2edd;
+  
+}
+
+div.container>.footer{
+  background-color: #6ab04c;
+  
+}

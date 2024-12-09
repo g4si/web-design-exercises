@@ -1,0 +1,146 @@
+body {
+    margin: 0px;
+    font-size: 16px;
+}
+.main-container {
+    width: 100%;
+    max-width: 1800px; /* The max-width property defines the maximum width of an element. */
+    margin: 0px auto; /* set the content center after it reaches max-width. */
+    font-size: 1em; /* 1em means 16px (parent font-size (body) is 16px on line 4) */
+}
+
+header , footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav span {
+    margin-left: 15px;
+    padding: 6px 11px;
+    border: 3px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 40px;
+}
+
+main section {
+    overflow: hidden;
+}
+
+main .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center; 
+}
+
+main .content {
+    margin-right: 40px ;
+}
+
+.menu span {
+    border-bottom: 2px solid black;
+    padding: 10px 0px;
+}
+
+.cards {
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+
+.card {
+    padding: 20px 10px;
+    background-color: thistle;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 900px) { /* for tablets */
+    .main-container {
+        font-size: 2em;
+    }
+    
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(12,1fr) ;
+        grid-template-rows: 1fr 1fr;
+        font-size: 1.5em;
+    }
+    .c1 {
+        grid-row: 1/2;
+        grid-column: 1/7;
+    }
+    .c2 {
+        grid-row: 1/2;
+        grid-column: 7/13;
+    }
+    .c3 {
+        grid-row: 2/3;
+        grid-column: 4/10;
+    }
+
+    header nav{
+        justify-content: space-around;
+    }
+    main {
+        grid-template-columns: 2fr 4fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main .menu {
+        display: none;
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
+    main .content {
+        margin-left: 40px ;
+    }
+
+    header nav {
+        flex-direction: column;
+        text-align: center;
+        align-items: stretch;
+    }
+
+    nav span {
+        margin-top: 15px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 3fr; */
+        grid-template-rows: auto;
+    }
+
+    .c1, .c2, .c3 {
+        grid-column: 1/2;
+    }
+    .c1 {
+        grid-row: 1/2;
+    }
+    .c2 {
+        grid-row: 2/3;
+    }
+    .c3 {
+        grid-row: 3/4;
+    }
+}
