@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/09563b2171.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="JS/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-right">
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href=""><i class="fa-solid fa-house"></i></a>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="nav-left">
+                <div class="register-login-btn">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#">ثبت نام /ورود</a>
+                </div>
+            </div>
+        </nav>
+        <section class="slider">
+
+            <div class="slides">
+                <div class="item active" id="slide1">
+                    <img src="./images/s3.jpg" alt="">
+                    <span>آهنگ ها رو زندا تر از اون چیزی که هستن گوش بده</span>
+                </div>
+                <div class="item" id="slide2">
+                    <img src="./images/s2.jpg" alt="">
+                    <span style="color: white;">کیفیت صدایی که همیشه <br>دنبالش بودی اینجاست</span>
+                </div>
+                <div class="item" id="slide3">
+                    <img src="./images/s1.jpg" alt="">
+                    <span>رویاهاتو بلند گوش بده</span>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <i onclick="setSlide('slide1', 1)" class="fa-solid fa-circle"></i>
+                <i onclick="setSlide('slide2', 2)" class="fa-solid fa-circle"></i>
+                <i onclick="setSlide('slide3', 3)" class="fa-solid fa-circle"></i>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="product-section">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="images/p1.jpg" alt="">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">
+                            هدست کامپیوتر تسکو مدل TH 5124
+                        </div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">800 هزارتومان</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="b-icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="b-text" href="">علاقه</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="b-icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="b-text" href="">خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="images/p2.jpg" alt="">
+                            <span class="hot-offer">پیشنهاد ویژه</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">
+                            هدست بی سیم conio 12
+                        </div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">200 هزارتومان</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="b-icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="b-text" href="">علاقه</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="b-icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="b-text" href="">خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="images/p3.jpg" alt="">
+                            <span class="hot-offer">پیشنهاد ویژه</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">
+                            هدست بی سیم رپو مدل 352 h
+                        </div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">900 هزارتومان</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="b-icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="b-text" href="">علاقه</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="b-icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="b-text" href="">خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="images/p4.jpg" alt="">
+                            <span class="hot-offer">پیشنهاد ویژه</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">
+                            هدست گیمینگ رپو مدل xxx
+                        </div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">800 هزارتومان</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="b-icon" href=""><i class="fa-solid fa-heart"></i></a>
+                                    <a class="b-text" href="">علاقه</a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="b-icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a class="b-text" href="">خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
